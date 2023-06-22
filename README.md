@@ -5,10 +5,12 @@ The Pet Adoption App is a full-stack web application that allows users to browse
 ## Features
 
 - User Registration and Login: Users can create an account or log in to access the pet adoption functionality.
-- Search: Users can search pets according to given criterias
-- Adoption Requests: Users can submit adoption/fostering requests for the pets they are interested in.
-- Admin Access: Admin users have additional features to manage the app, including:
+- User profile page: user can view and edit their info including changing password.
+- Search: Users can search pets. There is basic and advanced search options.
+- Pets' list: a list of pets' cards that matched the search criterias, including pet's name, img, adoption status, read more and save buttons and indication if it is owned by the user.
+- User can click pet's card to view its full description
 - Users can save pets in their wishlist
+- Adoption Requests: Users can submit adoption/fostering requests for the pets they are interested in or return them.
 
 Admin's access:
 

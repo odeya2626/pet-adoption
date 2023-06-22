@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  client:
+    container_name: pet-adoption-client-c
+    image: pet-adoption-client-i
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app/client
+    env_file:
+      - ./client/.env
+
+  server:
+    container_name: pet-adoption-server-c
+    image: pet-adoption-server-i
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./server:/app/server
+    env_file:
+      - ./server/.env
