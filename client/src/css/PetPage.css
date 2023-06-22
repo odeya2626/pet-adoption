@@ -1,0 +1,76 @@
+.petImg{
+border-radius: 6px;
+min-width: 70%;
+max-width: 400px;
+height: 300px;
+object-fit: cover;
+}
+.info-card{
+min-width: fit-content;
+word-wrap: break-word;      
+border-radius: 6px;
+border: 1px solid #36A420;
+
+}
+.pet-details{
+border: none;
+padding: 5px 10px;
+margin: 5px;
+color: #A71A35;
+}
+.black{
+color: black;
+}
+.big-icon{
+font-size: 45px;
+}
+.back{
+  position: absolute;
+  top: 0.9%;
+  left: 0;
+}
+
+/* Toast */
+.fade-in {
+    margin: 6px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    animation: move-in 1s ease-out;
+    opacity: 1;
+    animation-fill-mode: forwards;  
+}
+.pet-details-container{
+  width: 80%;
+}
+.pet-main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes move-in {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+.fade-out{
+    display: none;
+}
+@media (max-width: 600px) {
+  .big-icon{
+    font-size: 30px;
+  }
+  .pet-details-container{
+    margin: 6px
+  }
+}
+@media (max-width: 500px) {
+  .pet-main{
+    flex-direction: column-reverse;
+  }
+}

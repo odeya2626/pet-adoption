@@ -1,0 +1,20 @@
+.petCard:hover{
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.1);
+} 
+.hide{
+    opacity: 0;
+}
+.petCard{
+max-height: 100% ;
+height: 256px;
+width: 240px;
+}
+.spinner{
+    top: 30%;
+    left: 42%;
+}
+.cardImg{
+    max-height: 100%;
+    height: 156px;
+    object-fit: cover;
+}

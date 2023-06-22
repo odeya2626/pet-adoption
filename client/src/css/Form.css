@@ -1,0 +1,48 @@
+.form-container{
+	width: 50%;
+}
+.form-floating{
+	margin-top: 10px;
+}
+.form-control{
+	outline: none;
+	border: none;
+	background-color: rgb(240, 240, 240);
+	border-radius: 6.75px;
+	padding-left: 15px;
+	padding-bottom: 0px;
+}
+.form-select{
+	margin-top: 10px;
+	border: none;
+	background-color: rgb(240, 240, 240);
+	border-radius: 6.75px;
+	height: 42px;
+}
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+  padding: 0px 12px;
+}
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+  height: 42px;
+  line-height: 1;
+}
+.form-floating>label {
+  padding: 0.5rem 0.75rem;
+}
+
+input[type="file"]::file-selector-button{
+	background-color: #A71A35;
+	border: 1px solid #A71A35;
+	color: white;
+	border-radius: 6px;
+	padding: 6px;
+	cursor: pointer;
+}
+input[type="file"]:hover::file-selector-button{
+	background-color:white;
+	border: 1px solid #A71A35;
+	color: #A71A35;
+}
